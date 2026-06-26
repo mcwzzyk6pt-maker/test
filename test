@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的空间</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #74abe2, #5563de);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 { margin-bottom: 0.5rem; font-size: 1.8rem; }
+        p { opacity: 0.9; font-size: 1rem; }
+        .heart { font-size: 3rem; color: #ff4b5c; animation: beat 1s infinite alternate; margin: 1rem 0; }
+        @keyframes beat { to { transform: scale(1.2); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>新站测试成功！</h1>
+        <p>这是我在 Cloudflare Pages 上运行的第一个免费网站。</p>
+    </div>
+</body>
+</html>
